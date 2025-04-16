@@ -20,13 +20,17 @@ public class App {
 
              char op = sc.next().charAt(0);
              if (op == '+') {
-                 System.out.println("결과 값 : " + (a + b));
+                 int result = a+b;
+                 System.out.println("결과 값 : " + result);
              } else if (op == '-') {
-                 System.out.println("결과 값 : " + (a - b));
+                 int result = a-b;
+                 System.out.println("결과 값 : " + result);
              } else if (op == '*') {
-                 System.out.println("결과 값 : " + (a * b));
+                 int result = (a*b);
+                 System.out.println("결과 값 : " + result);
              } else if (op == '/') {
-                 System.out.println("결과 값 : " + (a / b));
+                 int result = (a/b);
+                 System.out.println("결과 값 : " + result);
              }
              sc.nextLine();
              System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
