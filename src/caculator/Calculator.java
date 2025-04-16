@@ -1,4 +1,4 @@
-package com.example.caculator;
+package caculator;
 
 public class Calculator {
     int a;

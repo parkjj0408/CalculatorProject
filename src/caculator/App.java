@@ -1,4 +1,4 @@
-package com.example.caculator;
+package caculator;
 
 import java.util.Scanner;
 
