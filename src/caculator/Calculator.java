@@ -10,36 +10,40 @@ public class Calculator {
 
   public int calculate(int num1, int num2, char op) {
     int result;
+
     switch (op) {
-      case '+':
-        result = num1 + num2;
-        results.add(result);//인덱스 안에 넣기 성공 ?
-        return result ;
+        case '+':
+          result = num1 + num2;
+          results.add(result);//인덱스 안에 넣기 성공 ?
+          return result;
 
-      case '-':
-        result = num1 - num2;
-        results.add(result);
-        return result;
+        case '-':
+          result = num1 - num2;
+          results.add(result);
+          return result;
 
 
-      case '*':
-        result = num1 * num2;
-        results.add(result);
-        return result ;
+        case '*':
+          result = num1 * num2;
+          results.add(result);
+          return result;
 
-      case '/':
-        if (num2!= 0) {
-        result = num1 / num2;
-        results.add(result);
-        return result ;
+        case '/':
+          if (num2 != 0) {
+            result = num1 / num2;
+            results.add(result);
+            return result;
 
-        } else {
-          System.out.println("0은 입력하실 수 없습니다.");
+          } else {
+            System.out.println("0은 입력하실 수 없습니다.");
 
-        }
-      default  :
-        throw new IllegalArgumentException("지원하지 않는 연산자입니다.");
+          }
+
+      default:
+        throw new IllegalArgumentException("지원하지 않는 연산자입니다");
     }
+
+
 
   }
 

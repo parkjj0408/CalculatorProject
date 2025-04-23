@@ -18,23 +18,24 @@ public class App {
                 System.out.println("사칙연산 기호를 입력하세요");
                 char op = sc.next().charAt(0);
 
-                    System.out.println("두 번째 정수를 입력해 주세요:");
-                    int num2 = sc.nextInt();
+                System.out.println("두 번째 정수를 입력해 주세요:");
+                int num2 = sc.nextInt();
 
-                       if (num2 == 0) {
+                  if (num2 == 0) {
                            System.out.println(" 0은 입력할 수 없습니다. 다시 입력해 주세요:");
-                           num2 = sc.nextInt();
-                        }
+                          num2 = sc.nextInt();
+
+                  }
 
                 int result = calculator.calculate(num1, num2, op);
                 System.out.println("결과 값 :" + result);
                 sc.nextLine();
 
 
-            }catch(InputMismatchException e){
+               }catch(InputMismatchException e){
                 System.out.println("숫자만 입력해주세요");
                 sc.nextLine(); // 이거 없으면 무한 바복
-               continue; //반복문 처음으로 돌아감.
+
             }
             System.out.println("더 계산하시겠습니까? 아무 글자나 입력해주세요.(exit 입력 시 종료)");
             String end = sc.nextLine();
